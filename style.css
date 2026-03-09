@@ -1,0 +1,39 @@
+body {
+	background-image: url("assets/images/background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 100vh;
+	padding-top: clamp(80px, 10vh, 110px);
+}
+
+.hero-card {
+	border: 0;
+	border-radius: 0;
+}
+
+.hero-card .card-img {
+	height: clamp(360px, 65vh, 620px);
+	object-fit: cover;
+	object-position: center top;
+}
+
+.hero-overlay {
+	background-color: rgba(0, 0, 0, 0.52);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	text-align: right;
+	padding: clamp(1rem, 4vw, 3rem);
+}
+
+.hero-overlay .card-title {
+	max-width: 20ch;
+}
+
+.hero-overlay .card-text {
+	max-width: 55ch;
+	font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+}
